@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-by-example/learning/loops"
+	
 )
 
 func main() {
@@ -15,12 +15,9 @@ func main() {
 	fmt.Println(true && false)
 	fmt.Println(true || false)
 	fmt.Println(!true)
-	fmt.Println("----------------------------------------------\n\n")
+	
 	variables()
 
-	loops.LoopInitialCondition()
-	loops.LoopSingleCondition()
-	loops.LoopRange()
 
 }
 
