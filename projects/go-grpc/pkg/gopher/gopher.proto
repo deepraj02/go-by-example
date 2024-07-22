@@ -1,0 +1,16 @@
+syntax="proto3";
+package gopher;
+
+option go_package = "go-by-example/projects/go-grpc";
+service Gopher{
+    rpc GetGopher (GopherRequest) returns (GopherReply){}
+}
+
+
+message GopherRequest{
+    string name = 1;
+}
+
+message GopherReply{
+    string message = 1;
+}
