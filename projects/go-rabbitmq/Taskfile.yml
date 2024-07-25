@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  dep-install:
+    desc: "Install all required dependencies"
+    cmds:
+      - "go get golang.org/x/net/context && go get github.com/rabbitmq/amqp091-go"
+      - "go mod tidy"
+  setup:
+    desc: "Setup the environment"
+    cmds:
+      - "docker compose up -d"
